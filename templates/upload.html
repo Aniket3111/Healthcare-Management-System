@@ -1,0 +1,47 @@
+{% extends 'headfoot.html' %}
+{%load static%}
+{% block body  %}
+  <div class="card text-center mt-4 btn-light border-0">
+    <div class="card-header border-bottom-0 bg-transparent">
+      <ul class="nav nav-pills card-header-pills justify-content-center ">
+        <li class="nav-item ">
+          <a class="nav-link active bg-success" href="/upload-csv">Upload Medical Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-success" href="/checkpatient">Retrieve Patient Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-success" href="/healthprediction">Add and Predict Patient Data</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card hov" style="max-width: 540px; margin:auto; margin-top:110px; margin-bottom:216px; ">
+      <div class="row g-0 ">
+        <div class="col-md-4 d-flex align-items-center">
+          <img src="{%static "images/upload1.png"%}" class="img-fluid rounded-start m-3" alt="...">
+        </div>
+  <div class="col-md-8">
+      <div class="card-body ms-3">
+        <h5 class="card-title">Upload Your Medical Records</h5>
+        <p class="card-text" style="text-align:justify">Upload your Medical Data that is stored in CSV file. This file will be broken into three blocks which will be hashed using Blockchain. </p>
+        <form action="/savefile/" method="post" enctype="multipart/form-data" > {% csrf_token %}
+          {{ form.as_p }}
+        <button type="submit" id="csvb"  class="btn btn-success">Block Formatting</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <footer class="footer1">Copyright © 2023-2024 HealthCare.
+        All Rights are reserved</footer>
+        {% comment %} <ul> {% endcomment %}
+        {% comment %} <li><a href="/block/" target="pageFrame">Block Formation</a></li>
+        </ul>
+        <iframe name="pageFrame" frameborder="0"></iframe>
+        <br> {% endcomment %}
+        
+
+        {% comment %} <button type="submit">Upload</button> {% endcomment %}
+        </form>
+        {% endblock body  %}

@@ -1,0 +1,29 @@
+{%load static%}
+<html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">
+    </head>
+    <body id="csvbg" style="background-image: url('{% static "images/md3.jpg" %}')"; >
+        <h2>Doctor Registration Form</h2>
+        <form action="/savedata/" method="post" enctype="multipart/form-data" class="register">
+            {%csrf_token %}
+            First name:<input type="text" name="firstname"><br>
+            <br>
+            Last name:<input type="text" name="lastname"><br>
+            <br>
+            City:<input type="text" name="city"><br>
+            <br>
+            Mobile No:<input type="number" name="mobilenumber"><br>
+            <br>
+            EmailID:<input type="text" name="emailid"><br>
+            <br>
+            Password:<input type="password" name="password"><br>
+            <br>
+            <br>
+            <input type="submit" value="Register" id="rb1">
+            <input type="reset" id="rb2">
+            
+        </form>
+    </body>
+</html>

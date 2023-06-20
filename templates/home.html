@@ -1,0 +1,124 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style1.css'%}">
+	<link
+	href="https://fonts.googleapis.com/css2?
+	family=Ubuntu+Mono&display=swap"
+	rel="stylesheet">
+	<title>MediSphere-HealthCare Management</title>
+	<link rel="icon" href="{%static "images/ms.png"%}">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="main1">
+			<div class="topp">
+			<div>
+		<header class="head">
+			
+			<div class="title">
+			<h1 id="top">MediSphere-HealthCare<br> Management</h1>
+		</div>
+			<div class="sign" style="display: flex;">
+			<a href="/loginD"><button type="button" class="btn">Login</button></a>
+<a href="/signup"><button type="button" class="btn btn1 ">Signup</button></a>
+</div>
+</div>
+<div class="bottom">
+<div class="heading"><span  class="head2">Worried About Your <span style="color: #049d41;">Medical Records?</span><br/> HealthCare Management System using Blockchain for privacy and efficency</span></div>
+</div>
+<div class="carous">
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner" >
+		  <div class="carousel-item active">
+			  <img style="margin-left:21%" src="{%static "images/Decentral.jpg"%}" alt="">
+			<h1>Decentralized</h1>
+		  </div>
+		  <div class="carousel-item">
+			<img style="margin-left:21%" src="{%static "images/secure.jpg"%}" alt="">
+			<h1 style="margin-left:7%" >Secure</h1>
+		  </div>
+		  <div class="carousel-item">
+			<img style="margin-left:21%" src="{%static "images/accr.jpg"%}"  alt="">
+			<h1>Best Accuracy</h1>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+</div>
+</div>
+</div>
+		</header>
+		<div class="contain">
+       <img src="{%static "images/bgimg.jpg"%}" alt="">
+		</div>
+	</div>
+	<h1 class="h-primary center"
+	style="margin-top:30px;">
+	Options to Contact
+</h1>
+<div id="service">
+	<div class="box">
+		<!-- Form -->
+		<a href="/feedbackform"><img src=
+		"{%static "images/form.png"%}"
+			 alt= "color_image"></a>
+		<br>
+		 
+		<!-- Displaying text at
+			the center of the box-->
+		<p class="center">
+			People can fill up the form and send us the problem
+		</p>
+
+	</div>
+	<div class="box">
+		 
+		<!-- Email -->
+		<a href="mailto:example@yourdomain.com"><img src=
+		"{%static "images/email.png"%}"
+			 alt= "color_image"></a>
+		<br>
+		 
+			<!-- Displaying text at
+			the center of the box-->
+		<p class="center">
+			Use this Email to send us about the problem faced
+		</p>
+
+	</div>
+	<div class="box">
+		<img src=
+		"{%static "images/tele.jpg"%}"
+			 alt= "color_image">
+		<br>
+		 
+		<!-- Displaying text at
+			the center of the box-->
+		<p class="center">
+			Toll Free Number:+1800 200 300 400
+		</p>
+
+	</div>
+</div>
+	<footer class="footer1">Copyright © 2023-2024 HealthCare.
+		All Rights are reserved</footer>
+</body>
+</html>

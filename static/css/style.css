@@ -1,0 +1,214 @@
+#bg-login
+{
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 1380px 650px;
+    background-attachment: fixed;
+}   
+
+.login{  
+    position:fixed;
+    width: 300px; 
+    height: 300px; 
+    /* right: 200px;  */
+    top:1px;
+    bottom: 50px;
+    margin:150px;   
+    margin-left:350px; 
+    margin-bottom:50px;
+    padding: 55px;  
+    background: #e7ecec; 
+    border-radius:15px ; 
+    font-size:20px; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+#Uname{  
+    width: 250px;  
+    height: 35px; 
+    border: none;  
+    border-radius:5px; 
+    padding-left: 40px;
+    font-weight: bold;
+    /* font-size:50em;  */
+     
+}   
+/* .btn{  
+    position: fixed; 
+    text-align:center ;
+}       */
+#log{  
+    text-align: center;
+    color: rgb(131, 11, 11);
+    width: 250px;  
+    height: 35px; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 17px; 
+    margin:auto;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    } 
+.login button{
+    text-align: center;
+    background-color: rgb(177, 175, 175);
+    width: 250px;  
+    height: 80px; 
+    font-size:25px;
+    font-weight: bold;
+    border-radius: 17px; 
+    margin-left: 600px;
+    margin-top: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+   
+    /* font-size: 10cm; */
+  }
+   
+
+   a{  
+    float: right;
+    text-align: center;  
+    color: rgb(7, 15, 117);
+      
+  }  
+button:hover {
+    /* opacity: 0.8; */
+    color: rgb(8, 117, 180)
+  }
+
+#csvbg
+{
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 1380px 650px;
+    background-attachment: fixed;
+}  
+.csvfile{
+    position: fixed;
+    width: 200px;
+    height: 180px;
+    background: #a1b6dd; 
+    margin-left: 420px;
+    /* margin-top: 150px; */
+    padding: 50px;
+    font-size: 30px;
+} 
+#csvb{
+    /* margin: 200px; */
+    background-color: rgb(245, 205, 146);
+    width: 150px;  
+    height: 40px; 
+    font-size: 15px;
+    font-weight: bold;
+    /* border-radius: 17px; */
+
+}
+h6{
+    margin-left: 450px;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.blockf{
+    position: fixed;
+    width: 550px;
+    height: 500px;
+    background-color:rgb(172, 188, 241);
+    padding: 40px;
+    margin-left: 350px;
+}
+#down{
+    /* margin: 200px; */
+    background-color: rgb(226, 117, 117);
+    width: 200px;  
+    height: 70px; 
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 480px;
+    margin-top: 40px;
+    /* border-radius: 17px; */
+
+}
+h5{
+    margin-left: 350px;
+    font-size: 35px;
+    margin-top: 50px;
+
+}
+.predict
+{
+  border: 1px solid rgb(15, 15, 15);
+  width: 350px;
+  height: 400px;
+  color: #000000;
+  /* margin: 250px; */
+  margin-left: 900px;
+  margin-top: 300px;
+  background: linear-gradient(to top,#ebf1f1,#d1ceebee);
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  padding: 55px;
+  position: fixed;
+  display: inline-block;
+  /* width: 140px; */
+  text-align: right;
+}
+#hb{
+    /* margin: 200px; */
+    background-color: rgb(168, 247, 123);
+    width: 150px;  
+    height: 40px; 
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px; 
+    /* border-radius: 17px; */
+
+}
+.register
+{
+  border: 1px solid rgb(15, 15, 15);
+  width:400px;
+  height:360px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 250px;
+  margin-left: 900px;
+  background: linear-gradient(to top,#89e3f7,#eeee);
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  padding: 40px;
+  position: fixed;
+  display: inline-block;
+  /* width: 140px; */
+  text-align: right;
+}
+#rb1{
+    /* margin: 200px; */
+    background-color: rgb(151, 245, 132);
+    width: 150px;  
+    height: 40px; 
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px; 
+    /* border-radius: 17px; */
+
+}
+#rb2{
+    /* margin: 200px; */
+    background-color: rgb(250, 138, 119);
+    width: 150px;  
+    height: 40px; 
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px; 
+    /* border-radius: 17px; */
+
+}
+h2{
+    margin-left: 700px;
+    font-size: 30;
+}
+h4{
+    margin-left: 400px;
+    margin-top: 70px;
+    font-size: 50px;
+}

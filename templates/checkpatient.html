@@ -1,0 +1,59 @@
+{% extends 'headfoot.html' %}
+{%load static%}
+{% block body  %}
+  <div class="card text-center mt-4 btn-light border-0">
+    <div class="card-header border-bottom-0 bg-transparent">
+      <ul class="nav nav-pills card-header-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link link-success" href="/upload-csv">Upload Medical Records</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active bg-success "href="/checkpatient">Retrive Patient Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-success" href="/healthprediction">Add and Predict Patient Data</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card hov" style="max-width: 540px; margin:auto; margin-top:110px; margin-bottom:216px; ">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{%static "images/medical-data.png"%}" class="img-fluid rounded-start m-3" alt="...">
+          </div>
+    <div class="col-md-8">
+        <div class="card-body ms-3">
+          <h5 class="card-title">Retrieve Patient Record</h5>
+          <p class="card-text">Enter patient's previously given unique patient id to fetch previous medical record</p>
+       
+          <form action="/fetch/" method="post" enctype="multipart/form-data" >
+            {% csrf_token %}
+            {% if messages %}
+            {% for message in messages %}
+             {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+    
+            {% endfor %}
+    
+        {% endif %}
+            <div class="block">
+                <label> Patient ID:</label><input type="text"  name="ID" required>
+              </div>
+              <div class="d-flex justify-content-center">
+          <button type="submit" id="csvb"  class="btn btn-success">Retrieve Record</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer1">Copyright © 2023-2024 HealthCare.
+        All Rights are reserved</footer>
+        {% comment %} <ul> {% endcomment %}
+        {% comment %} <li><a href="/block/" target="pageFrame">Block Formation</a></li>
+        </ul>
+        <iframe name="pageFrame" frameborder="0"></iframe>
+        <br> {% endcomment %}
+        
+
+        {% comment %} <button type="submit">Upload</button> {% endcomment %}
+        </form>
+        {% endblock body  %}
